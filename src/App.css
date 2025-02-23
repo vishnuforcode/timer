@@ -1,0 +1,9 @@
+.btnno:hover{
+    background-color: aqua;
+}
+.btnYes:hover{
+    background-color: aqua;
+}
+.btn:active{
+    background-color: red;
+}
