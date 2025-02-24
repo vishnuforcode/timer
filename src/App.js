@@ -1,5 +1,4 @@
 import React from "react";
-// import "./App.css";
 // import Cards from "./Components/Cards"
 import Header from "./Components/Header";
 import Body from "./Components/Body";
@@ -13,6 +12,10 @@ const App = () => {
      document.getElementById('fool2').style.color = "black"
        document.getElementById('text2').innerHTML = "FUCK You 🖕 "
      document.getElementById('text2').style.fontSize = "30px"
+     document.getElementById('btn2').style.backgroundColor="grey"
+     document.getElementById('btn1').style.backgroundColor="#A3D1C6"
+
+
   }
   function yesclicked(){
      document.getElementById('body').style.backgroundImage= "url('https://static.thenounproject.com/png/7179972-512.png')"
@@ -20,6 +23,9 @@ const App = () => {
      document.getElementById('fool2').style.color = "yellow"
      document.getElementById('text2').innerHTML = "Thank you and LOVE you too !!"
      document.getElementById('text2').style.fontSize = "30px"
+     document.getElementById('btn1').style.backgroundColor="grey"
+     document.getElementById('btn2').style.backgroundColor="#B3D8A8"
+
 
 
     
@@ -56,7 +62,7 @@ const App = () => {
               top: "160px",
             }}
           >
-            <button
+            <button id="btn1"
             onClick={yesclicked}
               style={{
                 height: "50px",
@@ -73,6 +79,7 @@ const App = () => {
             </button>
 
             <button
+            id="btn2"
             onClick={noclicked}
               className="btnno"
               style={{
